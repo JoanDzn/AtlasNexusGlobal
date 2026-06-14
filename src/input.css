@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .glassmorphism {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    }
+
+    .card-glow:hover {
+        box-shadow: 0 10px 30px -10px rgba(43, 107, 243, 0.15);
+        border-color: rgba(43, 107, 243, 0.3);
+        transform: translateY(-4px);
+    }
+
+    /* Gradientes para textos */
+    .gradient-text-blue {
+        background: linear-gradient(135deg, #1D3D84 0%, #2B6BF3 50%, #475569 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-text-cyan {
+        background: linear-gradient(135deg, #2B6BF3 0%, #1D3D84 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Centrado absoluto del Nav en el header */
+    .header-nav-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Ocultar scrollbar por estética */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2B6BF3;
+}

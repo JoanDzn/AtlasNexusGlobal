@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/logoatlasnexus.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logoatlasnexus.webp" type="image/x-icon">
 
     <!-- herramientas de Marketing Digital (SEO) -->
     <title>Atlas Nexus Global - Conectando el conocimiento con el futuro</title>
@@ -28,109 +28,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Configuración personalizada de Tailwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            primary: '#2B6BF3',      // Azul corporativo logo
-                            primaryHover: '#1A53C5', // Azul corporativo oscuro para hover
-                            secondary: '#1D3D84',    // Azul marino títulos diapositiva
-                            accent: '#60A5FA',       // Azul claro
-                            light: '#F8FAFC',        // Fondo claro pizarra
-                            lightBlue: '#F0F6FF',    // Fondo azul claro complementario
-                            dark: '#0F172A',         // Slate 900
-                            gray: '#475569'          // Slate 600
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-delayed': 'float-delayed 8s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'spin-slow': 'spin 12s linear infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
-                        'float-delayed': {
-                            '0%, 100%': { transform: 'translateY(0px) rotate(0.5deg)' },
-                            '50%': { transform: 'translateY(8px) rotate(-0.5deg)' },
-                        },
-                        glow: {
-                            '0%': { 'box-shadow': '0 0 5px rgba(43, 107, 243, 0.15), 0 0 10px rgba(43, 107, 243, 0.1)' },
-                            '100%': { 'box-shadow': '0 0 20px rgba(43, 107, 243, 0.4), 0 0 30px rgba(43, 107, 243, 0.2)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style type="text/css">
-        /* Reglas CSS personalizadas complementarias para el tema claro */
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(15, 23, 42, 0.06);
-        }
-
-        .card-glow:hover {
-            box-shadow: 0 10px 30px -10px rgba(43, 107, 243, 0.15);
-            border-color: rgba(43, 107, 243, 0.3);
-            transform: translateY(-4px);
-        }
-
-        /* Gradientes para textos */
-        .gradient-text-blue {
-            background: linear-gradient(135deg, #1D3D84 0%, #2B6BF3 50%, #475569 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .gradient-text-cyan {
-            background: linear-gradient(135deg, #2B6BF3 0%, #1D3D84 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Ocultar scrollbar por estética */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #F8FAFC;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #CBD5E1;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #2B6BF3;
-        }
-
-        /* Centrado absoluto del Nav en el header */
-        .header-nav-center {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <!-- Compiled Tailwind CSS and Custom Styles -->
+    <link href="css/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-brand-light text-brand-dark font-sans min-h-screen overflow-x-hidden antialiased">
@@ -155,7 +54,7 @@
             <div class="flex items-center z-10">
                 <a href="#" class="flex items-center space-x-3 group focus:outline-none"
                     aria-label="Atlas Nexus Global Inicio">
-                    <img src="img/logoatlasnexus.png" alt="Logo Atlas Nexus Global"
+                    <img src="img/logoatlasnexus.webp" alt="Logo Atlas Nexus Global"
                         class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm">
                     <span class="text-xl font-extrabold tracking-tight text-brand-secondary whitespace-nowrap">
                         Atlas Nexus <span class="text-brand-primary">Global</span>
@@ -310,7 +209,7 @@
                     <div class="relative z-10 flex flex-col items-center space-y-7">
                         <!-- Imagen del logo -->
                         <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-xl">
-                            <img src="img/logoatlasnexus.png" alt="Atlas Nexus Global"
+                            <img src="img/logoatlasnexus.webp" alt="Atlas Nexus Global"
                                 class="h-40 w-auto object-contain drop-shadow-2xl"
                                 style="filter: brightness(0) invert(1);">
                         </div>
@@ -1506,7 +1405,8 @@
                 <div class="flex items-center space-x-4">
                     <div
                         class="w-16 h-16 rounded-2xl bg-white shadow-md border border-slate-100 p-2 flex items-center justify-center">
-                        <img src="img/atlas.png" alt="Atlas App Icon" class="w-full h-full object-contain">
+                        <img src="img/atlas.webp" alt="Atlas App Icon" loading="lazy"
+                            class="w-full h-full object-contain">
                     </div>
                     <div>
                         <span
@@ -1601,13 +1501,13 @@
                 <!-- Contenedor del Mockup de PC (Base trasera) -->
                 <div
                     class="absolute w-[80%] sm:w-[85%] left-0 top-4 z-10 transition-all duration-500 hover:scale-[1.02]">
-                    <img src="img/pc.png" alt="Atlas en PC"
+                    <img src="img/pc.webp" alt="Atlas en PC" loading="lazy"
                         class="w-full h-auto object-contain drop-shadow-2xl rounded-2xl">
                 </div>
                 <!-- Contenedor del Mockup de Teléfono (Superpuesto delante a la derecha) -->
                 <div
                     class="absolute w-[28%] sm:w-[30%] right-2 bottom-0 z-20 transition-all duration-500 hover:scale-105">
-                    <img src="img/phone.png" alt="Atlas en Móvil"
+                    <img src="img/phone.webp" alt="Atlas en Móvil" loading="lazy"
                         class="w-full h-auto object-contain drop-shadow-2xl rounded-2xl">
                 </div>
                 <!-- Decorativo orbe de luz detrás -->
@@ -1665,7 +1565,7 @@
                 <!-- Columna 1: Información Corporativa -->
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center space-x-3">
-                        <img src="img/logoatlasnexus.png" alt="Logo Atlas Nexus Global"
+                        <img src="img/logoatlasnexus.webp" alt="Logo Atlas Nexus Global" loading="lazy"
                             class="h-8 w-auto object-contain">
                         <span class="text-lg font-bold text-white tracking-wide">Atlas Nexus Global, C.A.</span>
                     </div>

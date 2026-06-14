@@ -1,0 +1,17 @@
+{
+  "name": "atlas-nexus-global",
+  "version": "1.0.0",
+  "description": "Atlas Nexus Global website with local Tailwind compiler and image optimizer",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/output.css --minify",
+    "optimize-images": "node ./scripts/optimize-images.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "sharp": "^0.33.4"
+  }
+}
